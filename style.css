@@ -126,9 +126,9 @@ form p {
   text-align: center;
   margin: 2px 0;
 }
-#errorFirstname,
+#errorFirstName,
 #errorLastName,
-#errorMmail,
+#errorMail,
 #errorPass {
   margin: 5px 0;
   color: red;
