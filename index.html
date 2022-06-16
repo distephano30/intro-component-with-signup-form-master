@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+    <!-- css -->
+    <link rel="stylesheet" href="style.css" />
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <title>Intro component with sign up form</title>
+  </head>
+  <body>
+    <!-- the main content -->
+    <main>
+      <!-- the article -->
+      <article>
+        <h1>Learn to code by watching others</h1>
+        <p>
+          See how experienced developers solve problems in real-time. Watching
+          scripted tutorials is great, but understanding how developers think is
+          invaluable.
+        </p>
+      </article>
+      <!-- the form -->
+      <section>
+        <h2>Try it free 7 days <span>then $20/mo. thereafter</span></h2>
+        <form class="myForm" action="#">
+          <input id="firstname" type="text" placeholder="First Name" />
+          <p id="errorFirstName"></p>
+          <input type="text" id="lastname" placeholder="Last Name" />
+          <p id="errorLastName"></p>
+          <input type="email" id="email" placeholder="Email Address" />
+          <p id="errorMail"></p>
+          <input id="password" type="password" placeholder="Password" />
+          <p id="errorPass"></p>
+          <input type="submit" value="CLAIM YOUR FREE TRIAL" id="submitBtn" />
+          <p>
+            By clicking the button, you are agreeing to our
+            <a href="#">Terms and Services </a>
+          </p>
+        </form>
+        <div class="">
+          <p></p>
+        </div>
+      </section>
+    </main>
+
+    <!-- javascript -->
+    <script src="app.js"></script>
+  </body>
+</html>
