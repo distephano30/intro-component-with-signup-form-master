@@ -4,9 +4,10 @@ const firstName = document.getElementById("firstname");
 const lastName = document.getElementById("lastname");
 const email = document.getElementById("email");
 const password = document.getElementById("password");
+const submitBtn = document.getElementById("submitBtn");
 
 form.addEventListener("submit", (e) => {
-  // e.preventDefault();
+  e.preventDefault();
   formValidation();
 });
 
@@ -23,17 +24,25 @@ function formValidation() {
 
   if (firstNameValue === "") {
     errorFirstName.innerHTML = "First Name cannot be empty";
+  } else {
+    errorFirstName.innerHTML = "";
   }
   if (lastNameValue === "") {
     errorLastName.innerHTML = "Last Name cannot be empty";
+  } else {
+    errorLastName.innerHTML = "";
   }
   if (emailValue === "") {
-    errorLastName.innerHTML = "Email cannot be empty";
+    errorEmail.innerHTML = "Email cannot be empty";
   } else if (!mailValidation(emailValue)) {
-    errorLastName.innerHTML = "Looks like your emai is not valid";
+    errorEmail.innerHTML = "Looks like your emai is not valid";
+  } else {
+    errorEmail.innerHTML = "";
   }
   if (passwordValue === "") {
     errorPassword.innerHTML = "Password cannot be empty";
+  } else {
+    errorPassword.innerHTML = "";
   }
 }
 
